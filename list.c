@@ -149,30 +149,25 @@ void * popBack(List * list) {
 void * popCurrent(List * list) {
 
   if (list == NULL || list->current == NULL) {
-    // Si la lista es NULL o el nodo actual es NULL, no se puede hacer nada
     return NULL;
   }
-
-  // Obtener el dato del nodo actual
+  
   void *data = list->current->data;
 
   if (list->current->prev != NULL) {
-    // Si el nodo actual no es el primero
     list->current->prev->next = list->current->next;
-  } else {
-    // Si el nodo actual es el primero, actualizar el puntero de la cabeza
+  } 
+  else {
     list->head = list->current->next;
   }
-
+  
   if (list->current->next != NULL) {
-    // Si el nodo actual no es el último
     list->current->next->prev = list->current->prev;
-  } else {
-    // Si el nodo actual es el último, actualizar el puntero de la cola
+  } 
+  else {  
     list->tail = list->current->prev;
   }
 
-  // Liberar la memoria del nodo actual
   free(list->current);
   list->current = NULL;
 
