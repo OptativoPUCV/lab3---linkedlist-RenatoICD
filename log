@@ -175,3 +175,9 @@ Thu 28 Mar 2024 03:02:15 PM UTC:
  tests:  10|2
 total_score: 45/70
 2a69c2e
+Thu 28 Mar 2024 04:21:06 PM UTC: 
+ list.c | 19 ++++++++++++++-----
+ 1 file changed, 14 insertions(+), 5 deletions(-)
+ tests:  11|1
+total_score: 55/70
+e101387
