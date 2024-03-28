@@ -70,6 +70,8 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
+
+  
     return NULL;
 }
 
